@@ -2,7 +2,7 @@
 Hardware PWM accomplishes the same behavior as Software PWM, with the main difference being the PWM is connected directly to the LED and no software configuration is required other than the initialization of the pins and timer module.
 
 # Dependencies
-The only dependency for the ```debounce_G2553.c``` is the header file for the MSP430 boards ```<msp430.h>```.
+The only dependency for the ```hPWM_G2553.c``` and the ```hPWM_FR2311``` is the header file for the MSP430 boards ```<msp430.h>```.
 
 # MSP430G2553: Code Functionality
 This code uses four different functions to configure the LED, button, TimerA0, TimerA1. The respective functions are LEDSteup(), ButtonSetup(), TimerA0Setup(), and TimerA1Setup().
