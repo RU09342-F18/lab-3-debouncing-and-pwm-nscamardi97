@@ -5,3 +5,4 @@ Hardware PWM accomplishes the same behavior as Software PWM, with the main diffe
 The only dependency for the ```debounce_G2553.c``` is the header file for the MSP430 boards ```<msp430.h>```.
 
 # MSP430G2553: Code Functionality
+This code uses 
