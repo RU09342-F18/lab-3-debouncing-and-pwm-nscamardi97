@@ -2,7 +2,7 @@
 Due to the mechanical nature of a button or switch, the functionality does not always behave as desired. In order to combat this, something referred to as "debouncing" can be implemented. Button bounce results in mutliple depressions being detected and a program not running exactly the way it should. The objective of this lab is correct this behavior using interrupts and timers.
 
 # Dependencies
-The only dependency for the ```debounce_G2553.c``` is the header file for the MSP430 boards ```<msp430.h>```.
+The only dependency for the ```debounce_G2553.c``` is the header file for the MSP430 boards ```<msp430.h>```. For the ```debounc_P401R.c```, the required header file is ```<msp432.h>```.
 
 # MSP430G2553: Code Functionality
 First and foremost, the built-in watchdog timer is disabled using the line ```WDTCTL = WDTPW | WDTHOLD```. In order to verify the functionality of our debounce code, the red LED is triggered on each interrupt. To do this, P1.6 is configured as an output by setting the direction using PDIR. The button itself is then configured by setting P1.3 to an output. In order to have the button function properly, the internal resistor in P1.3 is enabled and set to pull-up. This gives the desired functionality so that when the button is pressed, the LED will trigger.
