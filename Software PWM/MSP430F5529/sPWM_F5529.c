@@ -53,7 +53,7 @@ void TimerA1Setup(void)
 {
     TA1CTL = TASSEL_2 + MC_0;   // Timer Control: SMCLK, Stop mode, No division
     TA1CCTL0 = CCIE;    // Capture Compare Interrupt Enabled for Reg 0
-    TA1CCR0 = 6000; // Set compare register to 5000 for debouncing delay
+    TA1CCR0 = 6000; // Set compare register to 6000 for debouncing delay
 }
 
 // Interrupt service routine for Port 1 (Button)
