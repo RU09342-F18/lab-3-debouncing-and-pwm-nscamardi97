@@ -31,7 +31,7 @@ void ButtonSetup(void)
     P1OUT |= BIT1;  // Set internal resistor to pull-up
     P1IE |= BIT1;    // Interrupt enable for P1.1 (Interrupt on button state change)
     P1IES |= BIT1;   // Edge select for interrupt (Falling Edge); Detects interrupt when the button is pushed down
-    P1IFG &= ~BIT1; // Clear Interrupt Flags for P1.3
+    P1IFG &= ~BIT1; // Clear Interrupt Flags for P1.1
 }
 
 // Configure LEDs
