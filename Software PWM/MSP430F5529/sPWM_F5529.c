@@ -1,3 +1,8 @@
+/*Author: Nick Scamardi
+ *Written: October 3, 2018
+ *Last Updated: October 3, 2018
+*/
+
 #include <msp430.h>
 
 void LEDSetup(void);
